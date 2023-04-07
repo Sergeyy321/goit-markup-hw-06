@@ -232,12 +232,12 @@ padding: 72px 24px  24px  ;
     .form-one{display: inline-block;}
 .button-close{position: absolute;top: 24px;right: 24px; background-color: var(--minor-colour);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    border-radius: 50%; cursor: pointer;
     width: 24px;
     height: 24px;
     display: flex;justify-content: center;align-items: center;padding: 0;transition:background-color var(--timing-select),fill var(--timing-select) ;}
     .button-close:hover{background-color: var(--main-background-color);fill: #e7e9fc;}
-.modal-icon{width: 8px;height: 8px; cursor: pointer;}
+.modal-icon{width: 8px;height: 8px;}
 
 .form{width: 360px;}
 .form-field-position{margin-top: 16px;margin-bottom: 24px;}
@@ -250,8 +250,8 @@ padding: 72px 24px  24px  ;
     }
     .form-field textarea{width: 360px;height: 120px;
         resize: none; 
-        border: 1px solid var(--second-title-color );
-        opacity: 0.2; border-radius: 4px;padding-left: 16px;padding-top: 8px;}
+        border: 1px solid rgba(46, 47, 66);
+        opacity: 0.2; border-radius: 4px;padding-left: 16px;padding-top: 8px; outline: none;}
 
 .form-field label{color: var(--border-color);gap: 8px;
     font-size: 12px;
@@ -264,6 +264,7 @@ padding: 72px 24px  24px  ;
     bottom: 8px;
 width: 18px;height: 24px; 
 }
+
 .label-text{margin-bottom: 4px;}
 .checkbox + .label-icon span{width: 16px;  height: 16px;  border: 1px solid var(--second-title-color);border-radius: 2px;display: flex;align-items: center;justify-content: center;transition: backgroud-color var(--timing-select);fill: transparent;}
 .checkbox:checked + .label-icon span{background-color: var(--main-background-color);border: none;
@@ -285,11 +286,13 @@ height: 56px;
 margin-left: auto;margin-right: auto;
 bottom: 24px;
 border-style: none;
+cursor: pointer;
 }
 .button-submit:hover{background-color: var(--main-background-color);}
-.input-modal:hover{border-color: var(--extra-background-color);}
 
-.icon-placeholder:hover{outline: none;  fill: var(--extra-background-color); opacity: 1;}
+.placeholeder-hover:hover input{border-color: var(--extra-background-color);}
+.placeholeder-hover:hover svg{outline: none;  fill: var(--extra-background-color); opacity: 1;}
+
 .form-field textarea:hover{border-color: var(--extra-background-color);opacity: 1;}
 
 .input-modal{transition: border-color var(--timing-select), fill var(--timing-select);border: 1px solid rgba(33, 33, 33, 0.2);}
